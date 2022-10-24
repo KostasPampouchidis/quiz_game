@@ -1,0 +1,151 @@
+#play{
+    background-image: url('../../assets/img/home-page-background_blur.png');
+    background-size: cover;
+    background-position: 0%;
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 10px;
+}
+
+.questions {
+    width: 25cm;
+    margin: $lg auto 0 auto;
+    padding: $sm $md;
+
+
+    h2 {
+        text-align: center;
+        font-weight: lighter;
+    }
+    
+    .lifeline-container {
+        border-left: 3px solid black;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        background-color: lightgreen;
+        border-radius: $button-radius;
+        display: flex;
+        justify-content: space-evenly;
+        margin-left: 70mm;
+        margin-right: 70mm;
+        
+    }
+
+    .lifeline-icon {
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    
+    .lifeline-icon:hover {
+        background: none;
+        color: darken(orange, 10%);
+    }
+
+    .lifeline {
+        position: relative;
+        top: -3px;
+    }
+
+    h5 {
+        background-color: whitesmoke;
+        border-left: 3px solid black;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        border-radius: $button-radius;
+        margin-left: 65mm;
+        margin-right: 65mm;
+        padding: $normal;
+        font-style: italic;
+        font-size: 1.65rem;
+        font-weight: 1000;
+        margin-bottom: $lg;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .options-container {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .option {
+        border-left: 3px solid black;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;   
+        background-color: $answersblue;
+        border-radius: $button-radius;
+        color: white;
+        cursor: pointer;
+        margin: $md auto;
+        padding: $normal;
+        transition: 0.3s linear all;
+        text-align: center;
+        width: 90%;
+    }
+
+    .option:hover {
+        background-color: darken($answersblue, 20%);
+    }
+
+    .timer-container .left{
+        border-left: 3px solid black;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        border-radius: $button-radius;
+        padding-left: 10px;
+        width: 9%;
+        background-color: rgb(253, 253, 103);
+    }
+    .timer-container .right{
+        border-left: 3px solid black;
+        border-top: 3px solid black;
+        border-right: 3px solid black;
+        border-bottom: 3px solid black;
+        border-radius: $button-radius;
+        padding-left: 10px;
+        width: 9%;
+        background-color: rgb(253, 253, 103);
+    }
+
+    .profile-button {
+        background-color: lightgray;
+        color: black;
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-radius: $button-radius;
+        margin-right: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .profile-button:hover {
+        background-color: darken(maroon, 10%);
+        box-shadow: $shadow;
+    }
+
+    .logout-button {
+        background-color: rgb(248, 147, 147);
+        color: black;
+        border-left: 2px solid black;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        border-radius: $button-radius;
+        margin-left: 30px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .logout-button:hover {
+        background-color: darken(rgb(48, 117, 185), 10%);
+        box-shadow: $shadow;
+    }
+}
